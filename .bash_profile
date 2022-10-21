@@ -39,7 +39,6 @@ export MAC_SDK_HOME=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.
 # vcpkg
 export VCPKG_ROOT="$HOME/vcpkg"
 
-
 # docker remote
 #export DOCKER_HOST=ssh://root@warrior.hihusky.com
 
@@ -49,14 +48,13 @@ export VCPKG_ROOT="$HOME/vcpkg"
 # expand PATH
 clt_bin="/Library/Developer/CommandLineTools/usr/bin/"
 texlive_bin="/usr/local/texlive/2022basic/bin/universal-darwin"
-gcc_arm_bin="/Users/ming/opt/gcc-arm-none-eabi-5_4-2016q3/bin"
-python3_bin="/Users/ming/Library/Python/3.8/bin"
 node16_bin="/usr/local/opt/node@16/bin"
 ruby_2_7="/usr/local/opt/ruby@2.7/bin"
 ruby_lastest="/usr/local/opt/ruby/bin"
-export PATH="$HOME/scripts:\
+# Custome Shell Script
+shell_scripts="$HOME/shell-scripts"
+export PATH="$shell_scripts:\
 $texlive_bin:\
-$python3_bin:\
 $node16_bin:\
 $HOME/.cargo/bin:\
 $JAVA_HOME/bin:\

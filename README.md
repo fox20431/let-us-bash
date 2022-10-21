@@ -10,3 +10,10 @@ chsh -s /usr/local/bin/bash
 brew install bash-completion
 brew install bash-git-prompt
 ```
+
+
+## Tip
+
+The docker make opening tty slowly
+
+You can delete the dokcer and docker-compose complete file in `/usr/local/etc/bash_complete.d/`
